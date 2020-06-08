@@ -97,14 +97,10 @@ variable "load_balancer_backend_address_pool_ids" {
 }
 
 variable "tags" {
-  type        = "map"
   description = "A map of the tags to use on the resources that are deployed with this module."
-
-  default = {
-    source = "terraform"
-  }
 }
 
 variable "cloudconfig_file" {
   description = "The location of the cloud init configuration file."
 }
+
